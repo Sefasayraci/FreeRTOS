@@ -521,3 +521,6 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif /* USE_FULL_ASSERT */
 ```
+
+# About the Project
+Setting up an operating system is also given in detail by FreeRTOS based embedded software language, assigning tasks at a basic level and examining the target order of these tasks and some operating systems.
