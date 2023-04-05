@@ -214,7 +214,7 @@ The result of two task compilation;
 
 ![image](https://user-images.githubusercontent.com/73780930/230230666-9249387a-a090-4dba-a829-5f7eeda1207c.png)
 
-General Code View - FreeRTOS with 2 Task assignments:
+# General Code View - FreeRTOS with 2 Task assignments:
 
 ```C++
 /* USER CODE BEGIN Header */
