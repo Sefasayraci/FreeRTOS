@@ -6,18 +6,31 @@ Real-time operating systems provide support for resource management, communicati
 For Example:
 
 1-Deos (DDC-I),
+
 2-embOS (SEGGER), 
+
 3-FreeRTOS (Amazon),
+
 4-Integrity (Green Hills Software), 
+
 5-Keil RTX (ARM), LynxOS (Lynx Software Technologies), 
+
 6-MQX (Philips NXP / Freescale), 
+
 7-Nucleus (Mentor Graphics), 
+
 8-Neutrino (BlackBerry), 
+
 9-PikeOS (Sysgo), 
+
 10-SafeRTOS (Wittenstein), 
+
 11-ThreadX (Microsoft Express Logic), 
+
 12-µC/OS (Micrium), VxWorks (Wind River), 
+
 13-Zephyr (Linux Foundation) are popular real-time processing systems.
+
 
 In addition to these;
 
