@@ -54,3 +54,20 @@ VXWorks can run on different processor architectures and hardware platforms. It 
 VXWorks includes features critical for real-time applications. These features include event-driven scheduling, interrupt management, process prioritization, timing management and debugging tools. These features are a great help in the development of real-time applications, which are critical to the reliability and performance of devices.
 
 # What is FreeRTOS?
+
+# Building a System Foundation with FreeRTOS CubeMX
+FreeRTOS helps us in the case used to implement the operating system in embedded systems. This system is more of a generic system. It is not only for Stm32 based processors.  We will iplamente this system to the microcontroller. I proceeded from Cubemx as its applicability and Environment.
+
+# Configuration
+For time, here we are activating the Crystal state via RCC for the fast processing time of our processor.
+
+I have also activated the user leds via GPIO Pins. The most critical configuration here will be to build the Timebase Source on any timer in the SYS area for the real simultaneous transmission system that we will install. This step will take place for the installed operating system.
+The last step is to install the FreeRTOS files in this section with the FreeRTOS option via the Middleware tab with the convenience provided by Stm.
+Here we can choose Interface I CMSIS_V1 or V2. If the interface here will use any system in the system, we will be able to run the commands by making adjustments here. 
+After generating our code, after entering the cmsis_os header, we can see the libraries on rtos here. I copy the rtos-based libraries found here and add them to the user code section in our main code.
+Let's eliminate the Tasks that will not be used here;
+"""
+osThreadId defaultTaskHandle;
+void StartDefaultTask(void const * argument);
+
+"""
