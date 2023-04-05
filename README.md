@@ -53,7 +53,11 @@ VXWorks can run on different processor architectures and hardware platforms. It 
 
 VXWorks includes features critical for real-time applications. These features include event-driven scheduling, interrupt management, process prioritization, timing management and debugging tools. These features are a great help in the development of real-time applications, which are critical to the reliability and performance of devices.
 
+# Real-Time Operating System Features:
+The key factors in a real-time operating system are minimum interrupt latency and minimum thread switching latency; a real-time operating system is judged more on how quickly or how predictably it can react than on the amount of work it can perform in a given amount of time.
+
 # What is FreeRTOS?
+It is the core of a real-time operating system for embedded devices ported to a microcontroller platform. Deployment takes place under this kernel. We will basically try to build on the microcontroller in the input area.
 
 # Building a System Foundation with FreeRTOS CubeMX
 FreeRTOS helps us in the case used to implement the operating system in embedded systems. This system is more of a generic system. It is not only for Stm32 based processors.  We will iplamente this system to the microcontroller. I proceeded from Cubemx as its applicability and Environment.
