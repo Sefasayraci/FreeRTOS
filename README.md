@@ -69,6 +69,19 @@ VXWorks includes features critical for real-time applications. These features in
 # Real-Time Operating System Features:
 The key factors in a real-time operating system are minimum interrupt latency and minimum thread switching latency; a real-time operating system is judged more on how quickly or how predictably it can react than on the amount of work it can perform in a given amount of time.
 
+Task Priority: Identifying the most needed task or performing the control to achieve the target task state and obtain the resource.
+
+Task Communication Mechanism: Synchronization mechanism for multiple tasks to communicate and ensure data integrity.
+
+Multitasking: Allows multiple systemtasks to execute their tasks simultaneously. This topic is explained in the following code.
+
+Deterministic behavior: Processes and interrupts are handled within a certain period of time. Interrupts are instantaneous changes in the flowchart that should occur in case of receiving data of situations that we may consider important.
+
+Defined stack usage: A defined stack space/target task is allocated for each task
+
+System management: Instead of resource management, application development is enabled.
+
+
 # What is FreeRTOS?
 It is the core of a real-time operating system for embedded devices ported to a microcontroller platform. Deployment takes place under this kernel. We will basically try to build on the microcontroller in the input area.
 
