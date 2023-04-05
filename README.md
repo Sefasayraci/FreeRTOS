@@ -39,7 +39,7 @@ I will explain the operating systems that I want to go into detail on my field a
 # 1) Integrity
 Integrity is an operating system product developed by Hewlett-Packard. It is designed for environments with high security requirements. Integrity is widely used in places with high security requirements, such as large enterprises, banks and government agencies.
 In addition, it is also used as a reliable operating system, especially in air combat aircraft. 
-For example, the operating system product that is part of this family, the Green Hills Software Integrity DO-178B real-time operating system (RTOS), also plays a role in the F35 fighter jet manufactured by Lockheed Martin. In Turkey, the Real-time National Operating System (RTOS), developed by TÜBİTAK and Havelsan, continues to be actively used.
+For example, the operating system product that is part of this family, the Green Hills Software Integrity DO-178B real-time operating system (RTOS), also plays a role in the F35 fighter jet manufactured by Lockheed Martin. In Turkey, the Real-time National Operating System (RTOS), developed by TUBITAK and Havelsan, continues to be actively used.
 
 The Integrity operating system is specifically optimized for applications that require high security and high performance. This operating system can run on multi-processor systems, allowing applications requiring high performance to be run in parallel.
 
