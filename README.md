@@ -1,29 +1,29 @@
-# FreeRTOS
+# Iplament FreeRTOS
 Real Time Operating System witch application from this Microcontroller
 
-# What is RTOS?
+# What is RTOS Some Operating Systems at home
 Real-time operating systems provide support for resource management, communication, precise scheduling, synchronization and planning. RTOS has a deadline associated with the tasks and must complete the tasks before this deadline. RTOS should be deterministic, quality of service (QoS) and deadline driven.
 For Example:
 
-Deos (DDC-I),
-embOS (SEGGER), 
-FreeRTOS (Amazon),
-Integrity (Green Hills Software), 
-Keil RTX (ARM), LynxOS (Lynx Software Technologies), 
-MQX (Philips NXP / Freescale), 
-Nucleus (Mentor Graphics), 
-Neutrino (BlackBerry), 
-PikeOS (Sysgo), 
-SafeRTOS (Wittenstein), 
-ThreadX (Microsoft Express Logic), 
-µC/OS (Micrium), VxWorks (Wind River), 
-Zephyr (Linux Foundation) are popular real-time processing systems.
+1-Deos (DDC-I),
+2-embOS (SEGGER), 
+3-FreeRTOS (Amazon),
+4-Integrity (Green Hills Software), 
+5-Keil RTX (ARM), LynxOS (Lynx Software Technologies), 
+6-MQX (Philips NXP / Freescale), 
+7-Nucleus (Mentor Graphics), 
+8-Neutrino (BlackBerry), 
+9-PikeOS (Sysgo), 
+10-SafeRTOS (Wittenstein), 
+11-ThreadX (Microsoft Express Logic), 
+12-µC/OS (Micrium), VxWorks (Wind River), 
+13-Zephyr (Linux Foundation) are popular real-time processing systems.
 
 In addition to these;
 
 I will explain the operating systems that I want to go into detail on my field and the operating systems I have researched and studied.
 
-# Integrity
+# 1) Integrity
 Integrity is an operating system product developed by Hewlett-Packard. It is designed for environments with high security requirements. Integrity is widely used in places with high security requirements, such as large enterprises, banks and government agencies.
 In addition, it is also used as a reliable operating system, especially in air combat aircraft. 
 For example, the operating system product that is part of this family, the Green Hills Software Integrity DO-178B real-time operating system (RTOS), also plays a role in the F35 fighter jet manufactured by Lockheed Martin. In Turkey, the Real-time National Operating System (RTOS), developed by TÜBİTAK and Havelsan, continues to be actively used.
@@ -39,12 +39,12 @@ The most widely used version of the Integrity operating system family is HP-UX. 
 
 It is a very well secured operating system. They are written to protect operating systems against unauthorized access. The Integrity operating system does not compromise on security-based applications in this regard.
 
-# GIS 
+# 2) GIS 
 In Turkey, the GİS Operating System enables the indigenous development of important technologies used in the defense sector, such as UAVs, helicopters and aircrafts. Since the indigenous development of these technologies is ensured with national software, external intervention in the systems is also prevented. Officials stated that the GİS can be easily used in the integration of any project thanks to its scalable feature.
 
 ![image](https://user-images.githubusercontent.com/73780930/230222551-79aad076-8881-4e05-b90f-5b9b2458822c.png)
 
-# VXWorks
+# 3) VXWorks
 Wind River VXWorks, developed by Wind River Systems, is an operating system for real-time embedded systems. VXWorks is specifically designed for high-reliability, low latency, fast and deterministic embedded applications.
 
 VXWorks is especially used in industries such as aerospace, defense, automotive, industrial automation, medical devices and telecommunications. Devices in these industries are often used in areas where factors such as reliability and speed are critical, and VXWorks is designed to meet these requirements.
