@@ -124,3 +124,77 @@ void StartDefaultTask(void const * argument)
   /* USER CODE END 5 */
 }
 ```
+
+As a result, I have prepared only the operating system iplamentation basic system codes in an active format. We will activate the task and peripherals we will use. Since this is an embedded software development, we need to use a pointer based parameter to run it.
+
+I create a task to create our main loop.
+
+```C++
+void Task(void *pvParameters)
+{
+	while()
+	{
+	HAL_GPIO_TogglePin(GPIO8,GPIO_PIN_14);
+	vTaskDelay(pdMS_TO_TICKS(500));
+	}
+}
+```
+
+In this draft, just before starting the system, we create the draft in the "begin" fields, that is, we activate it.
+
+```C++
+  /* USER CODE BEGIN 2 */
+xTaskCreate(Task1,"task_start",128,NULL,0,NULL);
+  /* USER CODE END 2 */
+```
+Another important point here is that when the threads are active in the system, the threads must be deleted, otherwise we will encounter an error situation. For this, we can mark thread I as pointer with the handler variable and delete the threads. Here we will select prioritized threads and prevent system confusion. Thread is the state of being able to do many processes together at the same time.
+
+```C++
+  /* USER CODE END 2 */
+vTaskStartScheduler();
+  /* Infinite loop */
+```
+This is how we will be able to start the system.
+
+![image](https://user-images.githubusercontent.com/73780930/230230415-e18d73f7-ea31-47f6-8482-69a0b0beae0e.png)
+
+Operating system parameter configuration settings section. Here let's change configSupport_STATIC_ALLOCATION from 1-> to 0.
+
+Compilation Result:
+
+![image](https://user-images.githubusercontent.com/73780930/230230488-d877115b-fcc6-4c97-a1fb-488a03dacd4e.png)
+
+
+In the Two Task System, threads are separate tasks in the working principle software;
+
+![image](https://user-images.githubusercontent.com/73780930/230230591-a1319aa2-ad03-4e82-82da-e64f1420870d.png)
+
+```C++
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+TaskHandle_t task1;
+void Task1(void *pvParameters)
+{
+	while(1)
+	{
+	HAL_GPIO_TogglePin(GPIO_PIN_8,GPIO_PIN_14);
+	vTaskDelay(pdMS_TO_TICKS(800));
+	}
+}
+
+void Task2(void *pvParameters)
+{
+	while(1)
+	{
+	HAL_GPIO_TogglePin(GPIO_PIN_8,GPIO_PIN_7);
+	vTaskDelay(pdMS_TO_TICKS(100));
+	}
+}
+/* USER CODE END 0 */
+```
+
+The result of two task compilation;
+
+![image](https://user-images.githubusercontent.com/73780930/230230666-9249387a-a090-4dba-a829-5f7eeda1207c.png)
+
+
