@@ -66,8 +66,7 @@ The last step is to install the FreeRTOS files in this section with the FreeRTOS
 Here we can choose Interface I CMSIS_V1 or V2. If the interface here will use any system in the system, we will be able to run the commands by making adjustments here. 
 After generating our code, after entering the cmsis_os header, we can see the libraries on rtos here. I copy the rtos-based libraries found here and add them to the user code section in our main code.
 Let's eliminate the Tasks that will not be used here;
-"""
+```C++
 osThreadId defaultTaskHandle;
 void StartDefaultTask(void const * argument);
-
-"""
+```
