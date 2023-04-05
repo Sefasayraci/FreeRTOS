@@ -35,7 +35,8 @@ The most widely used version of the Integrity operating system family is HP-UX. 
 ![image](https://user-images.githubusercontent.com/73780930/230222355-0dfc37ec-dd22-49fc-990e-fa845b4d0012.png)
 ![image](https://user-images.githubusercontent.com/73780930/230222371-4dbdfdab-efc1-4858-9edf-2668c9544e39.png)
 
-*HP-UX 11.11 İşletim Sistemi*endl
+*HP-UX 11.11 İşletim Sistemi*
+
 It is a very well secured operating system. They are written to protect operating systems against unauthorized access. The Integrity operating system does not compromise on security-based applications in this regard.
 
 # GIS 
